@@ -17,7 +17,7 @@ or Debian stretch:
 
     make stretch
 
-You can use any tag menioned [here](https://hub.docker.com/_/debian):
+You can use any tag mentioned [here](https://hub.docker.com/_/debian):
 
     make <tag>
 
