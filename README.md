@@ -6,6 +6,7 @@ Debian systemd container to start a service that requires systemd.
 ### Requirements
 
 * docker
+* make
 
 ### Installation
 
