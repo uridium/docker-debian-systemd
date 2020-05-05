@@ -9,7 +9,7 @@ RUN apt-get update -qq \
     && apt-get dist-upgrade -y -qq \
     && apt-get install --no-install-recommends -y \
         systemd \
-        systemd-sysv \
+        python3 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
 
