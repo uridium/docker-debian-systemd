@@ -3,8 +3,7 @@ ARG DIST="stable"
 FROM debian:$DIST
 
 ENV DEBIAN_FRONTEND="noninteractive" \
-    LC_ALL="C" \
-    container="docker"
+    LC_ALL="C"
 
 RUN apt-get update -qq \
     && apt-get dist-upgrade -y -qq \
