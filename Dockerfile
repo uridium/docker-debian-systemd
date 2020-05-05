@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND="noninteractive" \
 
 RUN apt-get update -qq \
     && apt-get dist-upgrade -y -qq \
-    && apt-get install -y \
+    && apt-get install --no-install-recommends -y \
         systemd \
         systemd-sysv \
     && apt-get clean \
