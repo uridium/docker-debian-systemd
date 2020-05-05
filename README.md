@@ -37,10 +37,14 @@ dependency:
 driver:
   name: docker
 platforms:
-  - name: molecule-debian-stable
+  - name: debian-systemd-stable
     image: uridium/debian-systemd:stable
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    command: /sbin/init
+    environment:
+      container: docker
+    privileged: True
 provisioner:
   name: ansible
 verifier:
