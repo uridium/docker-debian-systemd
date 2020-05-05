@@ -20,8 +20,10 @@ RUN rm -f \
     /lib/systemd/system/sockets.target.wants/*udev* \
     /lib/systemd/system/sockets.target.wants/*initctl* \
     /lib/systemd/system/sysinit.target.wants/systemd-tmpfiles-setup* \
-    /lib/systemd/system/systemd-update-utmp*
+    /lib/systemd/system/systemd-update-utmp* \
+    && ln -s /lib/systemd/system /sbin/init \
+    && systemctl set-default multi-user.target
 
 VOLUME ["/sys/fs/cgroup"]
 
-CMD ["/lib/systemd/systemd"]
+ENTRYPOINT ["/lib/systemd/systemd"]
