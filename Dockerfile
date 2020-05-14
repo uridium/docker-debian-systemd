@@ -10,6 +10,7 @@ RUN apt-get update -qq \
     && apt-get install --no-install-recommends -y \
         systemd \
         python3 \
+        procps \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
 
