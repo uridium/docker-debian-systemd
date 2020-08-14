@@ -27,6 +27,10 @@ To download the latest version from the [registry](https://hub.docker.com/r/urid
 
     make pull
 
+To [verify](https://github.com/GoogleContainerTools/container-structure-test) the content and structure of the container:
+
+    make test
+
 ### Use
 
 This container is especially useful when running [molecule test](https://molecule.readthedocs.io/en/latest/examples.html#systemd-container). For example:
