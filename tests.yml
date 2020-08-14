@@ -1,0 +1,25 @@
+---
+schemaVersion: '2.0.0'
+
+fileExistenceTests:
+- name: '/lib/systemd/systemd'
+  path: '/lib/systemd/systemd'
+  shouldExist: True
+  permissions: '-rwxr-xr-x'
+  uid: 0
+  gid: 0
+- name: '/lib/systemd/system'
+  path: '/lib/systemd/system'
+  shouldExist: True
+  permissions: 'drwxr-xr-x'
+  uid: 0
+  gid: 0
+- name: '/etc/systemd/system/*.wants/*'
+  path: '/etc/systemd/system/*.wants/*'
+  shouldExist: False
+
+commandTests:
+- name: 'python3'
+  command: 'python3'
+  args: ['--version']
+  expectedOutput: ['[0-9.]*']
