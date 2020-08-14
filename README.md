@@ -1,6 +1,6 @@
 Docker Debian systemd
 --
-[![Docker Hub](https://img.shields.io/docker/cloud/build/uridium/debian-systemd.svg?maxAge=0)](https://hub.docker.com/r/uridium/debian-systemd/)
+[![Docker Hub](https://img.shields.io/docker/cloud/build/uridium/debian-systemd.svg)](https://hub.docker.com/r/uridium/debian-systemd/builds)
 
 Debian systemd container to start a service that requires systemd.
 
